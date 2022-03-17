@@ -1,0 +1,662 @@
+Chloe Zeng
+Andrew ID: zhengzen
+
+Task0 execution
+
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+0
+Current size of chain: 1
+Difficulty of the most recent block: 2
+Total difficulty for all blocks: 2
+Approximate hashes per second on this machine: 0.0
+Expected total hashes required for the whole chain: 256.0
+Nonce for the most recent bloc: 524
+Chain hash: 00CDF6E8B8C9417856409AC6191C5A445C871F811EE6163A39C9771DAA057885
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+1
+Enter difficulty >0
+2
+Enter transaction
+Alice pays Bob 100DSCoin
+Total execution time to add this block was 71 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+1
+Enter difficulty >0
+2
+Enter transaction
+Bob pays Carol 50DSCoin
+Total execution time to add this block was 8 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+1
+Enter difficulty >0
+2
+Enter transaction
+Carol pays Andy 10DSCoin
+Total execution time to add this block was 7 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+2
+Chain verification: TRUE
+Total execution time to verify the chain was 29 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+3
+View the Blockchain
+ds_chain :[{"index":0, "timestamp":2022-03-17 14:29:41.828277, "data":Genesis, "Previous Hash": , "nonce": 524, "difficulty": 2}
+{"index":1, "timestamp":2022-03-17 14:29:47.730355, "data":Alice pays Bob 100DSCoin, "Previous Hash": 00CDF6E8B8C9417856409AC6191C5A445C871F811EE6163A39C9771DAA057885, "nonce": 571, "difficulty": 2}
+{"index":2, "timestamp":2022-03-17 14:29:55.962218, "data":Bob pays Carol 50DSCoin, "Previous Hash": 00432A4A816B8B71058E18772D046F17473406110D7794008E39C079985704DE, "nonce": 15, "difficulty": 2}
+{"index":3, "timestamp":2022-03-17 14:30:10.732402, "data":Carol pays Andy 10DSCoin, "Previous Hash": 002DAC2669CF63F2C893E6351959CE66F9F94F2D1C3D9D6150479271BF7B2989, "nonce": 27, "difficulty": 2}
+], chainHash: 007BBD2CF1E35CAA5D989E26CDD08D1FB8D40ECE4EB652A66D8102921B84184C}
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+4
+Enter block ID of block to corrupt
+1
+Enter new data for block 1
+Alice pays Bob 76 DSCoin
+Block 1 now holds Alice pays Bob 76 DSCoin
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+3
+View the Blockchain
+ds_chain :[{"index":0, "timestamp":2022-03-17 14:29:41.828277, "data":Genesis, "Previous Hash": , "nonce": 524, "difficulty": 2}
+{"index":1, "timestamp":2022-03-17 14:29:47.730355, "data":Alice pays Bob 76 DSCoin, "Previous Hash": 00CDF6E8B8C9417856409AC6191C5A445C871F811EE6163A39C9771DAA057885, "nonce": 571, "difficulty": 2}
+{"index":2, "timestamp":2022-03-17 14:29:55.962218, "data":Bob pays Carol 50DSCoin, "Previous Hash": 00432A4A816B8B71058E18772D046F17473406110D7794008E39C079985704DE, "nonce": 15, "difficulty": 2}
+{"index":3, "timestamp":2022-03-17 14:30:10.732402, "data":Carol pays Andy 10DSCoin, "Previous Hash": 002DAC2669CF63F2C893E6351959CE66F9F94F2D1C3D9D6150479271BF7B2989, "nonce": 27, "difficulty": 2}
+], chainHash: 007BBD2CF1E35CAA5D989E26CDD08D1FB8D40ECE4EB652A66D8102921B84184C}
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+2
+Node 2 does not have the right previous hash 
+Chain verification: FALSE
+Total execution time to verify the chain was 24 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+5
+Total execution time required to repair the chain was -17.0 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+2
+Chain verification: TRUE
+Total execution time to verify the chain was 29 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+1
+Enter difficulty >0
+4
+Enter transaction
+Andy pays Sean 25 DSCoin
+Total execution time to add this block was 79 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+0
+Current size of chain: 5
+Difficulty of the most recent block: 4
+Total difficulty for all blocks: 12
+Approximate hashes per second on this machine: 0.0
+Expected total hashes required for the whole chain: 66560.0
+Nonce for the most recent bloc: 6981
+Chain hash: 0000493D2BF4B19CBFFC0C55D617BDD2D0871FD78A0D218FAAEDE93F40FECA0F
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+6
+
+Process finished with exit code 0
+
+================================
+Task 0 Block.java
+
+/** Email: zhengzen@andrew.cmu.edu
+ * Author: Zheng Zeng */
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+
+public class Block {
+  // initiate all instance variables
+  private int indx;
+  private Timestamp tstamp;
+  private String data;
+  private int diff;
+  private BigInteger nonce;
+  private MessageDigest md;
+  private String previousHash = "";
+
+  // constructor of Block
+  // set the values of Block
+
+  public Block(int index, java.sql.Timestamp timestamp, java.lang.String data, int difficulty) {
+    this.indx = index;
+    this.tstamp = timestamp;
+    this.data = data;
+    this.diff = difficulty;
+    this.nonce = BigInteger.ZERO;
+  }
+
+  /** setters and getters of the Block */
+  public void setData(String data) {
+    this.data = data;
+  }
+
+  public void setTstamp(Timestamp tstamp) {
+    this.tstamp = tstamp;
+  }
+
+  public void setIndx(int indx) {
+    this.indx = indx;
+  }
+
+  public void setDiff(int diff) {
+    this.diff = diff;
+  }
+
+  public void setPreviousHash(String previousHash) {
+    this.previousHash = previousHash;
+  }
+
+  public String getData() {
+    return data;
+  }
+
+  public int getDiff() {
+    return diff;
+  }
+
+  public int getIndx() {
+    return indx;
+  }
+
+  public Timestamp getTstamp() {
+    return tstamp;
+  }
+
+  public String getPreviousHash() {
+    return previousHash;
+  }
+
+  public BigInteger getNonce() {
+    return this.nonce;
+  }
+
+  /** proofOfWork: to acquire the correct hash according to the difficulty */
+  public String proofOfWork() {
+    // initiate the nonce to be zero
+    nonce = BigInteger.ZERO;
+    // build the message to be hashed
+    String message = indx + tstamp.toString() + data + getPreviousHash() + nonce + diff;
+    // using the calculateHash(message) method to compute a hash
+    String hash = calculateHash(message);
+    // construct the required prefix string
+    String difficulty = "0".repeat(diff);
+    //        System.out.println("difficutly is "+ difficulty);
+    // while the hash does not begin with the current prefix
+    while (!hash.startsWith(difficulty)) {
+      nonce = nonce.add(BigInteger.ONE); // add one to nonce
+      //            System.out.println(nonce.toString());
+      // re-build the message with the new nonce
+      message = indx + tstamp.toString() + data + getPreviousHash() + nonce + diff;
+      hash = calculateHash(message);
+      //            System.out.println(hash);
+    }
+    return hash; // get the proofOfWork
+  }
+
+  /**
+   * calculateHash: take a message and compute its hash of SHA-256
+   *
+   * @param message
+   * @return
+   */
+  public String calculateHash(String message) {
+    try {
+      md = MessageDigest.getInstance("SHA-256");
+      md.update(message.getBytes());
+      // get SHA-256 hexstring
+      String hash = bytesToHex(md.digest());
+      return hash;
+    } catch (Exception e) {
+      e.getStackTrace();
+      return null;
+    }
+  }
+
+  /** bytesToHex: turn the md.digest() into string representation from lab and project1 codes */
+  private static final char[] hex_arr = "0123456789ABCDEF".toCharArray();
+
+  public static String bytesToHex(byte[] bytes) {
+    char[] hexChars = new char[bytes.length * 2];
+    for (int j = 0; j < bytes.length; j++) {
+      int v = bytes[j] & 0xFF;
+      hexChars[j * 2] = hex_arr[v >>> 4];
+      hexChars[j * 2 + 1] = hex_arr[v & 0x0F];
+    }
+    return new String(hexChars);
+  }
+
+  /**
+   * toString: print out the content of the Block in a json format
+   *
+   * @return
+   */
+  @Override
+  public String toString() {
+    return "{"
+        + "\"index\":"
+        + indx
+        + ", \"timestamp\":"
+        + tstamp
+        + ", \"data\":"
+        + data
+        + ", \"Previous Hash\": "
+        + previousHash
+        + ", \"nonce\": "
+        + nonce
+        + ", \"difficulty\": "
+        + diff
+        + '}';
+  }
+}
+
+===========================
+ Task 0 BlockChain.java
+ /** Email: zhengzen@andrew.cmu.edu
+ * Author: Zheng Zeng */
+import javax.management.timer.TimerMBean;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class BlockChain {
+  // contains an array of blocks
+  ArrayList<Block> block_list;
+  // a chain hash of the most recently added block
+  String chainHash = "";
+  double hashesPerSecond;
+  // constructor
+  // at initiation, it builds an arraylist and compute hashes per second
+  public BlockChain() throws NoSuchAlgorithmException {
+    block_list = new ArrayList<Block>();
+  }
+
+  /**
+   * isChainValid: to see if the chain is valid, the logic is : If the chain only contains one
+   * block, the genesis block at position 0, this routine computes the hash of the block and checks
+   * that the hash has the requisite number of leftmost 0's (proof of work) as specified in the
+   * difficulty field.
+   *
+   * <p>It also checks that the chain hash is equal to this computed hash. If either check fails,
+   * return an error message. Otherwise, return the string "TRUE". If the chain has more blocks than
+   * one, begin checking from block one. Continue checking until you have validated the entire
+   * chain. The first check will involve a computation of a hash in Block 0 and a comparison with
+   * the hash pointer in Block 1. If they match and if the proof of work is correct, go and visit
+   * the next block in the chain. At the end, check that the chain hash is also correct.
+   *
+   * @return
+   */
+  public String isChainValid() {
+    try {
+      Block cur = null; // initiate a cursor
+      String prevHash = ""; // initiate the previous hash
+      String diff; // initiate the difficulty level
+      // when the block only contains 1 block
+      if (block_list.size() == 1) {
+        cur = block_list.get(0);
+        diff = "0".repeat(cur.getDiff());
+        // see if it has the correct first 0s.
+        if (cur.proofOfWork().startsWith(diff)) {
+          // continue to see if chain hash is this proofOfWork
+
+        }
+      } else {
+        // when there are more than 1 block
+        for (int j = 0; j < block_list.size(); j++) {
+          // use the first block and compute its hash
+          // the hash of the previous node, beginning with block 0
+          cur = block_list.get(j); // start with block 0
+          // compare its requisite number of 0's
+          diff = "0".repeat(cur.getDiff());
+          if (cur.getPreviousHash()
+              .equals(
+                  prevHash)) { // if the previous hash is aligned with the previous node's
+                               // proofOfWork
+            if (cur.proofOfWork()
+                .startsWith(diff)) { // if the current block contains the correct hash
+              // all good, keep looping
+            } else {
+              // print out the problem
+              System.out.printf("Improper hash on node %d Does not begin with %s", j, diff);
+              return "FALSE";
+            }
+          } else {
+            // print out the problem
+            System.out.printf("Node %d does not have the right previous hash \n", j);
+            return "FALSE";
+          }
+          prevHash =
+              cur.proofOfWork(); // assign the proofOfWork of current block to be the previous hash
+        }
+      }
+      // check if the chainhash is correct after checking each block's proofOfWork and its previous
+      // hash
+      if (chainHash.equals(getLatestBlock().proofOfWork())) {
+        return "TRUE";
+      } else {
+        System.out.println("Chain hash is not correct.");
+        return "FALSE";
+      }
+    } catch (Exception e) {
+      e.getStackTrace();
+      return "FALSE";
+    }
+  }
+  // repair the chain if the hashes are not consistent
+  public void repairChain() {
+    Block curr; // initiate a cursor
+    String pre_hash = ""; // the default previous hash
+    for (int j = 0; j < block_list.size(); j++) {
+      curr = getBlock(j);
+      curr.setPreviousHash(pre_hash); // correct its previous hash
+      pre_hash = curr.proofOfWork(); // assign the current block's hash to be the previous hash for the next block
+    }
+      this.chainHash = pre_hash;// assign the current block's hash to be the chain hash
+  }
+  // add block method: 1. set the new block's previous block's hash; 2. add the new block to the end
+  // of the list;
+  // 3. add the new hash to chain hash
+  public void addBlock(Block newBlock) {
+    newBlock.setPreviousHash(chainHash);
+    block_list.add(newBlock);
+    this.chainHash = getLatestBlock().proofOfWork();
+  }
+  // computeHashesPerSecond: measure the time it takes to compute 2,000,000 hashes and assign the
+  // hashesPerSecond variable.
+  public void computeHashesPerSecond() throws NoSuchAlgorithmException {
+    long start = System.currentTimeMillis();
+    for (int i = 0; i < 2000000; i++) {
+      MessageDigest md = MessageDigest.getInstance("SHA-256");
+      md.update("00000000".getBytes());
+      // get SHA-256 hexstring
+      bytesToHex(md.digest());
+    }
+    long end = System.currentTimeMillis();
+    hashesPerSecond = (2000000 / ((start - end) / 1000.0));
+  }
+  /** bytesToHex: turn the md.digest() into string representation from lab and project1 codes */
+  private static final char[] hex_arr = "0123456789ABCDEF".toCharArray();
+
+  public static String bytesToHex(byte[] bytes) {
+    char[] hexChars = new char[bytes.length * 2];
+    for (int j = 0; j < bytes.length; j++) {
+      int v = bytes[j] & 0xFF;
+      hexChars[j * 2] = hex_arr[v >>> 4];
+      hexChars[j * 2 + 1] = hex_arr[v & 0x0F];
+    }
+    return new String(hexChars);
+  }
+
+  /**
+   * getters
+   *
+   * @param i
+   * @return
+   */
+  public Block getBlock(int i) {
+    return block_list.get(i);
+  }
+
+  public String getChainHash() {
+    return chainHash;
+  }
+
+  public int getChainSize() {
+    return block_list.size();
+  }
+
+  // to get hashes per second
+  public double getHashesPerSecond() throws NoSuchAlgorithmException {
+    return hashesPerSecond;
+  }
+
+  // get the latest block
+  public Block getLatestBlock() {
+    return block_list.get(block_list.size() - 1);
+  }
+  // get the total expected hashes length for the list
+  public double getTotalExpectedHashes() {
+    double totalExpectedHashes = 0.0;
+    for (int i = 0; i < getChainSize(); i++) {
+      // for each block, the expected hash is 16 to the power of its difficulty.
+      totalExpectedHashes += Math.pow(16.0, getBlock(i).getDiff());
+    }
+    return totalExpectedHashes;
+  }
+  // get the total difficulty level of the whole block chain
+  public int getTotalDifficulty() {
+    int totalDiff = 0;
+    for (int j = 0; j < block_list.size(); j++) {
+      totalDiff += block_list.get(j).getDiff();
+    }
+    return totalDiff;
+  }
+
+  // get the current system time
+
+  public Timestamp getTime() {
+    return java.sql.Timestamp.valueOf(LocalDateTime.now());
+  }
+  // print the information about the chain
+  // using the toString method from the block class
+  public void printChain() {
+    System.out.printf("ds_chain :[");
+    for (int i = 0; i < block_list.size(); i++) {
+      System.out.println(block_list.get(i));
+    }
+
+    System.out.println("], chainHash: " + getChainHash() + "}");
+  }
+
+  public void viewBasicStatus() throws NoSuchAlgorithmException {
+    System.out.println("Current size of chain: " + getChainSize());
+    System.out.println(
+        "Difficulty of the most recent block: " + getLatestBlock().getDiff());
+    System.out.println("Total difficulty for all blocks: " + getTotalDifficulty());
+    System.out.println("Approximate hashes per second on this machine: " + getHashesPerSecond());
+    System.out.println(
+        "Expected total hashes required for the whole chain: " + getTotalExpectedHashes());
+    System.out.println(
+        "Nonce for the most recent bloc: " + getLatestBlock().getNonce());
+    System.out.println("Chain hash: " + getChainHash());
+  }
+
+  /**
+   * The main driver of building the blocks and executions.
+   *
+   * @param args
+   * @throws NoSuchAlgorithmException
+   */
+  public static void main(String[] args) throws NoSuchAlgorithmException {
+    BlockChain chain = new BlockChain();
+    // add the initial block Genesis
+    Block initial = new Block(0, chain.getTime(), "Genesis", 2);
+    chain.addBlock(initial);
+    try {
+      // print out the menu
+      System.out.println(
+          ""
+              + "0. View basic blockchain status.\n"
+              + "1. Add a transaction to the blockchain.\n"
+              + "2. Verify the blockchain.\n"
+              + "3. View the blockchain.\n"
+              + "4. corrupt the chain.\n"
+              + "5. Hide the corruption by repairing the chain.\n"
+              + "6. Exit");
+      // read in any input
+      Scanner sc = new Scanner(System.in);
+      int instruction = sc.nextInt();
+      while (instruction < 6) { // while instruction is correct
+        switch (instruction) {
+          case 0:
+            {
+              chain.viewBasicStatus();
+              break;
+            }
+          case 1:
+            {
+              // add a new block, initiate one
+              Block newblock = new Block(chain.getChainSize(), chain.getTime(), null, 0);
+              System.out.println("Enter difficulty >0");
+              newblock.setDiff(sc.nextInt()); // set the difficulty level
+              System.out.println("Enter transaction");
+              sc.nextLine(); // jump over the current line
+              newblock.setData(sc.nextLine()); // set the data
+              Long start = System.currentTimeMillis(); // start counting the milliseconds
+              chain.addBlock(newblock);
+              Long end = System.currentTimeMillis();
+              int duration = (int) (end - start);
+              // return the time used for adding the block
+              System.out.println(
+                  "Total execution time to add this block was "
+                      + duration
+                      + " milliseconds"); // execution time
+              break;
+            }
+          case 2:
+            {
+              // start counting the time
+              long start = System.currentTimeMillis();
+              // return the chain's validity
+              System.out.println("Chain verification: " + chain.isChainValid());
+              long end = System.currentTimeMillis();
+              int duration = (int) (end - start);
+              // return the time used for checking validity
+              System.out.println(
+                  "Total execution time to verify the chain was " + duration + " milliseconds");
+              break;
+            }
+          case 3:
+            {
+              System.out.println("View the Blockchain");
+              chain.printChain(); // print out each block and the chain data in a json format
+              break;
+            }
+          case 4:
+            {
+              // corrupt a block by changing its value
+              System.out.println("Enter block ID of block to corrupt");
+              int s = sc.nextInt(); // get the id of the block
+              System.out.println("Enter new data for block " + s);
+              sc.nextLine(); // jump over the current line
+              String newdata = sc.nextLine(); // acquire the new data
+              chain.block_list.get(s).setData(newdata); // set the new data to block s
+              System.out.println("Block " + s + " now holds " + newdata);
+              break;
+            }
+          case 5:
+            {
+              // repair the chain
+              Long start = System.currentTimeMillis();
+              chain.repairChain();
+              Long end = System.currentTimeMillis();
+              double duration = (end - start);
+              System.out.println(
+                  "Total execution time required to repair the chain was "
+                      + duration
+                      + " milliseconds"); // repair time
+            }
+        }
+        // print the menu again
+        System.out.println(
+            ""
+                + "0. View basic blockchain status.\n"
+                + "1. Add a transaction to the blockchain.\n"
+                + "2. Verify the blockchain.\n"
+                + "3. View the blockchain.\n"
+                + "4. corrupt the chain.\n"
+                + "5. Hide the corruption by repairing the chain.\n"
+                + "6. Exit");
+        instruction = sc.nextInt();
+      }
+    } catch (NoSuchAlgorithmException e) {
+      e.getMessage();
+    }
+  }
+}
+
