@@ -14,7 +14,7 @@ Task0 execution
 Current size of chain: 1
 Difficulty of the most recent block: 2
 Total difficulty for all blocks: 2
-Approximate hashes per second on this machine: 0.0
+Approximate hashes per second on this machine: 1140901
 Expected total hashes required for the whole chain: 256.0
 Nonce for the most recent bloc: 524
 Chain hash: 00CDF6E8B8C9417856409AC6191C5A445C871F811EE6163A39C9771DAA057885
@@ -659,4 +659,578 @@ public class BlockChain {
     }
   }
 }
+============Task 0 END==================
 
+Task 1 Client side execution
+
+Client starts running
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+0
+View chain status
+Response: {"selection":0,"size":1,"chainHash":0083A02C6491E4F1063B2B43BCDB2BA916303A7D28AF4F2B0F7DCB5CBA615939,"totalHashes":256.0,"totalDiff":2,"recentNonce":151,"diff":2,"hps":1328021}
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+1
+Enter difficulty >0
+2
+Enter transaction
+Alice pays Bob 100DSCoin
+"Total execution time to add this block was 33 milliseconds"
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+1
+Enter difficulty >0
+2
+Enter transaction
+Bob pays Carol 50 DSCoin
+"Total execution time to add this block was 12 milliseconds"
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+1
+Enter difficulty >0
+2
+Enter transaction
+Carol pays Andy 10 DSCoin
+"Total execution time to add this block was 31 milliseconds"
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+2
+Verify the chain
+Chain verification: TRUE
+Total execution time to validate the block chain was 35 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+3
+View the Blockchain
+{ds_chain :[{"index":0, "timestamp":2022-03-19 00:11:52.328447, "data":Genesis, "Previous Hash": , "nonce": 151, "difficulty": 2},
+{"index":1, "timestamp":2022-03-19 00:12:06.337107, "data":Alice pays Bob 100DSCoin, "Previous Hash": 0083A02C6491E4F1063B2B43BCDB2BA916303A7D28AF4F2B0F7DCB5CBA615939, "nonce": 315, "difficulty": 2},
+{"index":2, "timestamp":2022-03-19 00:12:15.777673, "data":Bob pays Carol 50 DSCoin, "Previous Hash": 0070D9EFD8FF3E7D6800223F68F0D3533F214D0141B5469B91643ACB1C94C430, "nonce": 169, "difficulty": 2},
+{"index":3, "timestamp":2022-03-19 00:12:24.467466, "data":Carol pays Andy 10 DSCoin, "Previous Hash": 006479D9E70665C4C68DA9537383D516E429D60568DF3C3E17514B321366FCFA, "nonce": 388, "difficulty": 2}], chainHash: 00764156F45068621618B75D58E2E83C43361D21287D6892D96B3B06D59ED44E}
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+4
+Enter block ID of block to corrupt
+1
+Enter new data for block 1
+Alice pays Bob 76 DSCoin
+Block 1 now holds data Alice pays Bob 76 DSCoin
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+3
+View the Blockchain
+{ds_chain :[{"index":0, "timestamp":2022-03-19 00:11:52.328447, "data":Genesis, "Previous Hash": , "nonce": 151, "difficulty": 2},
+{"index":1, "timestamp":2022-03-19 00:12:06.337107, "data":Alice pays Bob 76 DSCoin, "Previous Hash": 0083A02C6491E4F1063B2B43BCDB2BA916303A7D28AF4F2B0F7DCB5CBA615939, "nonce": 315, "difficulty": 2},
+{"index":2, "timestamp":2022-03-19 00:12:15.777673, "data":Bob pays Carol 50 DSCoin, "Previous Hash": 0070D9EFD8FF3E7D6800223F68F0D3533F214D0141B5469B91643ACB1C94C430, "nonce": 169, "difficulty": 2},
+{"index":3, "timestamp":2022-03-19 00:12:24.467466, "data":Carol pays Andy 10 DSCoin, "Previous Hash": 006479D9E70665C4C68DA9537383D516E429D60568DF3C3E17514B321366FCFA, "nonce": 388, "difficulty": 2}], chainHash: 00764156F45068621618B75D58E2E83C43361D21287D6892D96B3B06D59ED44E}
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+2
+Verify the chain
+Chain verification: FALSE
+Node 2 does not have the right previous hash 
+
+Total execution time to validate the block chain was 3 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+5
+Repair the chain
+Total execution time to repair the chain was 14 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+2
+Verify the chain
+Chain verification: TRUE
+Total execution time to validate the block chain was 10 milliseconds
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+1
+Enter difficulty >0
+4
+Enter transaction
+Andy pays Sean 25 DSCoin
+"Total execution time to add this block was 285 milliseconds"
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+0
+View chain status
+Response: {"selection":0,"size":5,"chainHash":00006CA3574A8F60F388B93E3EEA3044DC6041A7080D8AB8D8EA4E515B97333B,"totalHashes":66560.0,"totalDiff":12,"recentNonce":79719,"diff":4,"hps":1324503}
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
+6
+
+Process finished with exit code 0
+
+===============================
+Task 1 Server Side Execution 
+
+server started
+We have a visitor
+Current size of chain: 1
+Difficulty of the most recent block: 2
+Total difficulty for all blocks: 2
+Approximate hashes per second on this machine: 1157407.4074074074
+Expected total hashes required for the whole chain: 256.0
+Nonce for the most recent bloc: 151
+Chain hash: 0083A02C6491E4F1063B2B43BCDB2BA916303A7D28AF4F2B0F7DCB5CBA615939
+Response: {"selection":0,"size":1,"chainHash":0083A02C6491E4F1063B2B43BCDB2BA916303A7D28AF4F2B0F7DCB5CBA615939,"totalHashes":256.0,"totalDiff":2,"recentNonce":151,"diff":2,"hps":1328021}
+Adding a block
+Setting response to Total execution time to add this block was 33 milliseconds
+"Total execution time to add this block was 33 milliseconds"
+Adding a block
+Setting response to Total execution time to add this block was 12 milliseconds
+"Total execution time to add this block was 12 milliseconds"
+Adding a block
+Setting response to Total execution time to add this block was 31 milliseconds
+"Total execution time to add this block was 31 milliseconds"
+Verifying entire chain
+Chain verification: TRUE
+Setting response to Total execution time to validate the block chain was 35 milliseconds
+Chain verification: TRUE
+Total execution time to validate the block chain was 35 milliseconds
+View the blockchain
+{ds_chain :[{"index":0, "timestamp":2022-03-19 00:11:52.328447, "data":Genesis, "Previous Hash": , "nonce": 151, "difficulty": 2},
+{"index":1, "timestamp":2022-03-19 00:12:06.337107, "data":Alice pays Bob 100DSCoin, "Previous Hash": 0083A02C6491E4F1063B2B43BCDB2BA916303A7D28AF4F2B0F7DCB5CBA615939, "nonce": 315, "difficulty": 2},
+{"index":2, "timestamp":2022-03-19 00:12:15.777673, "data":Bob pays Carol 50 DSCoin, "Previous Hash": 0070D9EFD8FF3E7D6800223F68F0D3533F214D0141B5469B91643ACB1C94C430, "nonce": 169, "difficulty": 2},
+{"index":3, "timestamp":2022-03-19 00:12:24.467466, "data":Carol pays Andy 10 DSCoin, "Previous Hash": 006479D9E70665C4C68DA9537383D516E429D60568DF3C3E17514B321366FCFA, "nonce": 388, "difficulty": 2}], chainHash: 00764156F45068621618B75D58E2E83C43361D21287D6892D96B3B06D59ED44E}
+corrupt the Blockchain
+Block 1 now holds data Alice pays Bob 76 DSCoin
+Block 1 now holds data Alice pays Bob 76 DSCoin
+View the blockchain
+{ds_chain :[{"index":0, "timestamp":2022-03-19 00:11:52.328447, "data":Genesis, "Previous Hash": , "nonce": 151, "difficulty": 2},
+{"index":1, "timestamp":2022-03-19 00:12:06.337107, "data":Alice pays Bob 76 DSCoin, "Previous Hash": 0083A02C6491E4F1063B2B43BCDB2BA916303A7D28AF4F2B0F7DCB5CBA615939, "nonce": 315, "difficulty": 2},
+{"index":2, "timestamp":2022-03-19 00:12:15.777673, "data":Bob pays Carol 50 DSCoin, "Previous Hash": 0070D9EFD8FF3E7D6800223F68F0D3533F214D0141B5469B91643ACB1C94C430, "nonce": 169, "difficulty": 2},
+{"index":3, "timestamp":2022-03-19 00:12:24.467466, "data":Carol pays Andy 10 DSCoin, "Previous Hash": 006479D9E70665C4C68DA9537383D516E429D60568DF3C3E17514B321366FCFA, "nonce": 388, "difficulty": 2}], chainHash: 00764156F45068621618B75D58E2E83C43361D21287D6892D96B3B06D59ED44E}
+Verifying entire chain
+Node 2 does not have the right previous hash 
+Chain verification: FALSE
+Node 2 does not have the right previous hash 
+
+Setting response to Total execution time to validate the block chain was 3 milliseconds
+Chain verification: FALSE
+Node 2 does not have the right previous hash 
+
+Total execution time to validate the block chain was 3 milliseconds
+Repairing the entire chain
+Setting respouse to Total execution time to repair the chain was 14 milliseconds
+Total execution time to repair the chain was 14 milliseconds
+Verifying entire chain
+Chain verification: TRUE
+Setting response to Total execution time to validate the block chain was 10 milliseconds
+Chain verification: TRUE
+Total execution time to validate the block chain was 10 milliseconds
+Adding a block
+Setting response to Total execution time to add this block was 285 milliseconds
+"Total execution time to add this block was 285 milliseconds"
+We have a visitor
+Current size of chain: 5
+Difficulty of the most recent block: 4
+Total difficulty for all blocks: 12
+Approximate hashes per second on this machine: 1308044.4735120996
+Expected total hashes required for the whole chain: 66560.0
+Nonce for the most recent bloc: 79719
+Chain hash: 00006CA3574A8F60F388B93E3EEA3044DC6041A7080D8AB8D8EA4E515B97333B
+Response: {"selection":0,"size":5,"chainHash":00006CA3574A8F60F388B93E3EEA3044DC6041A7080D8AB8D8EA4E515B97333B,"totalHashes":66560.0,"totalDiff":12,"recentNonce":79719,"diff":4,"hps":1324503}
+
+==================
+Task 1 Client Source Code
+
+
+/**
+ * Email: zhengzen@andrew.cmu.edu
+ * Author: Zheng Zeng
+ **/
+
+import com.google.gson.Gson;
+
+import java.io.*;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class BlockClientTCP {
+    //the client TCP's instance variables
+    Gson gson; //to translate json into Objects and Objects into json
+    requestMessage request; //to store the request sent to the server
+    responseMessage response; //to store the response from the server
+    Socket clientSocket; //the socket initiator
+
+    //constructor
+    public BlockClientTCP(){
+        //initiate instance variables
+        gson = new Gson();
+        request= new requestMessage();
+        response = new responseMessage();
+    }
+
+    /**
+     * runClient: the method to call other methods in this class
+     * used in main method
+     */
+    public void runClient(){
+    // run the client side
+    System.out.println("Client starts running");
+        // print out the menu
+        System.out.println(
+                ""
+                        + "0. View basic blockchain status.\n"
+                        + "1. Add a transaction to the blockchain.\n"
+                        + "2. Verify the blockchain.\n"
+                        + "3. View the blockchain.\n"
+                        + "4. corrupt the chain.\n"
+                        + "5. Hide the corruption by repairing the chain.\n"
+                        + "6. Exit");
+        // read in instruction integer
+        Scanner sc = new Scanner(System.in);
+        int instruction = sc.nextInt();
+        while (instruction < 6) { // while instruction is correct
+            //set the instruction of the request
+            request.setSelection(instruction);
+            switch (instruction) {
+                //based on different instructions, provide different services and set corresponding variables in the request.
+                case 0:
+                {
+            System.out.println("View chain status");
+                    break;
+                }
+                case 1:
+                {
+                    // ask for the difficulty
+                    System.out.println("Enter difficulty >0");
+                   request.setDiff(sc.nextInt()); // set the difficulty level
+                    // ask for the transaction data
+                    System.out.println("Enter transaction");
+                    sc.nextLine(); // jump over the current line
+                    request.setTransaction(sc.nextLine());// set the data of the request
+                    break;
+                }
+                case 2:
+                {
+            // verify the chain
+            System.out.println("Verify the chain");
+                    break;
+                }
+                case 3:
+                {
+                    //view the detail of the chain
+                    System.out.println("View the Blockchain");
+                    break;
+                }
+                case 4:
+                {
+                    // corrupt a block by changing its value
+                    System.out.println("Enter block ID of block to corrupt");
+                    int s = sc.nextInt(); // get the id of the block
+                    request.setCorruptId(s);
+                    System.out.println("Enter new data for block " + s);
+                    sc.nextLine(); // jump over the current line
+                    String newdata = sc.nextLine(); // acquire the new data
+                    request.setTransaction(newdata); // set the new data to block s
+                    break;
+                }
+                case 5:
+                {
+                    //repair the chain
+            System.out.println("Repair the chain");
+                    break;
+                }
+            }
+            // send other the request and get for the response
+            response = sendRequest(request);
+            //use the response's method to show its values;
+            response.viewResult();
+            System.out.println(
+                    ""
+                            + "0. View basic blockchain status.\n"
+                            + "1. Add a transaction to the blockchain.\n"
+                            + "2. Verify the blockchain.\n"
+                            + "3. View the blockchain.\n"
+                            + "4. corrupt the chain.\n"
+                            + "5. Hide the corruption by repairing the chain.\n"
+                            + "6. Exit");
+            instruction = sc.nextInt();
+        }
+    }
+    public responseMessage sendRequest(requestMessage req){
+        //initiate the socket
+        clientSocket = null;
+        try {
+            int serverPort = 6789;
+            clientSocket = new Socket("localhost", serverPort);
+            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream())));
+            //while request is not null, send the request
+            if (req != null) {
+                //turn the request into a json String
+                String jsonRequest = gson.toJson(req);
+                out.println(jsonRequest); //send the json String to the server
+                out.flush();
+                String responseString= in.readLine(); // retrieve the response string from the server
+                response = gson.fromJson(responseString,responseMessage.class);//turn the response string into responseMessage object
+            }
+
+        } catch (IOException e) {
+            System.out.println("IO Exception:" + e.getMessage());
+        } finally {
+            try {
+                if (clientSocket != null) {
+                    clientSocket.close();
+                }
+            } catch (IOException e) {
+                // ignore exception on close
+            }
+        }
+        return response; //send the result to the loop
+    }
+
+
+  public static void main(String[] args) {
+    //run the client
+      BlockClientTCP client = new BlockClientTCP();
+      client.runClient();
+
+  }
+}
+
+
+=====================
+Task 1 Server Source Code
+/**
+ * Email: zhengzen@andrew.cmu.edu
+ * Author: Zheng Zeng
+ **/
+
+import com.google.gson.Gson;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.security.NoSuchAlgorithmException;
+import java.util.Scanner;
+
+
+/**
+ * includes some instance variables
+ */
+public class BlockServerTCP {
+    //it has a block chain object to store all blocks
+    BlockChain chain;
+    //it has a response object to write out response
+    responseMessage response;
+    //it has a gson object to translate json into and from objects.
+    Gson gson;
+
+    public BlockServerTCP() throws NoSuchAlgorithmException {
+        chain = new BlockChain();
+        response = new responseMessage();
+        gson = new Gson();
+    }
+
+    /**
+     * this is the method used in the main method to get everything running.
+     */
+    public void run(){
+        //initiate the socket to listen for client's requests.
+        Socket clientSocket = null;
+        try {
+            System.out.println("server started");
+            int serverPort = 6789; // the server port we are using
+
+            // Create a new server socket
+            ServerSocket listenSocket = new ServerSocket(serverPort);
+
+            /*
+             * Block waiting for a new connection request from a client.
+             * When the request is received, "accept" it, and the rest
+             * the tcp protocol handshake will then take place, making
+             * the socket ready for reading and writing.
+             */
+            // If we get here, then we are now connected to a client.
+            clientSocket = listenSocket.accept();
+            // Set up "in" to read from the client socket
+            Scanner in;
+
+
+            // Set up "out" to write to the client socket
+            PrintWriter out;
+
+
+            /**
+             * read in the request, handle the request and then write the response to the client.
+             */
+            while (true) {
+                in = new Scanner(clientSocket.getInputStream());
+                out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream())));
+                while (in.hasNext()) {
+                    String data = in.nextLine();
+                    responseMessage response = handleRequest(data);
+                    String jsonResponse = gson.toJson(response);
+                    out.println(jsonResponse);
+                    out.flush();
+                }
+                in.close();
+                out.close();
+                clientSocket = listenSocket.accept();
+
+            }
+
+            // Handle exceptions
+        } catch (IOException  e) {
+            System.out.println("IO Exception:" + e.getMessage());
+
+            // If quitting (typically by you sending quit signal) clean up sockets
+        }catch ( NoSuchAlgorithmException e){
+            e.getStackTrace();
+            e.getMessage();
+        }
+        finally {
+            try {
+                System.out.println("server side quitting.");
+                if (clientSocket != null) {
+                    clientSocket.close();
+                }
+            } catch (IOException e) {
+                // ignore exception on close
+            }
+        }
+    }
+
+    /**
+     * the core method to deal with different requests and manipulate the response object.
+     * @param request
+     * @return
+     * @throws NoSuchAlgorithmException
+     */
+    public responseMessage handleRequest(String request) throws NoSuchAlgorithmException {
+        //when the chain has 0 block, initiate a block for the chain.
+        if (chain.getChainSize() == 0) {
+            // create a genesis Block
+            Block genesisBlock = new Block(0, chain.getTime(), "Genesis", 2);
+            chain.addBlock(genesisBlock);
+        }
+        //parse the request
+        requestMessage req = gson.fromJson(request,requestMessage.class);
+        int instruction = req.getSelection(); //get the instruction from the request
+        response.setSelection(instruction); //set the instruction in the response Object
+        //now properly deal with each type of request.
+        switch (instruction){
+            case 0:
+            {
+          System.out.println("We have a visitor");
+          response.setChainStatus(chain);
+                break;
+            }
+            case 1:{
+                response.addNewBlock(chain,req.getDiff(),req.getTransaction());
+                break;
+            }
+            case 2:{
+          System.out.println("Verifying entire chain");
+          response.verifyChain(chain);
+          break;
+            }
+            case 3:{
+          System.out.println("View the blockchain");
+          response.setChainDetail(chain.printChain());
+                break;
+            }
+            case 4:
+            {
+          System.out.println("corrupt the Blockchain");
+          response.corruptBlockchain(chain, req.getCorruptId(), req.getTransaction());
+          break;
+            }
+            case 5:{
+          System.out.println("Repairing the entire chain");
+          response.repairChain(chain);
+          break;
+            }
+        }
+        //view the result of the request
+        response.viewResult();
+        //return it for the run() method to send it to the client
+        return response;
+}
+
+    /**
+     * the main method to run and generate everything on the console
+     * @param args
+     * @throws NoSuchAlgorithmException
+     */
+    public static void main(String[] args) throws NoSuchAlgorithmException {
+        BlockServerTCP server = new BlockServerTCP();
+        server.run();
+
+  }
+}
